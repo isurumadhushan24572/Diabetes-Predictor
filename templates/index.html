@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction Form</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" method="post" class="diabetes-form">
+            <h2>Diabetes Prediction Form</h2>
+            <div class="form-group">
+                <label for="pregnancies">Pregnancies</label>
+                <input type="number" id="pregnancies" name="pregnancies" required>
+            </div>
+            <div class="form-group">
+                <label for="glucose">Glucose</label>
+                <input type="number" id="glucose" name="glucose" required>
+            </div>
+            <div class="form-group">
+                <label for="bloodPressure">Blood Pressure</label>
+                <input type="number" id="bloodPressure" name="bloodPressure" required>
+            </div>
+            <div class="form-group">
+                <label for="skinThickness">Skin Thickness</label>
+                <input type="number" id="skinThickness" name="skinThickness" required>
+            </div>
+            <div class="form-group">
+                <label for="insulin">Insulin</label>
+                <input type="number" id="insulin" name="insulin" required>
+            </div>
+            <div class="form-group">
+                <label for="bmi">BMI</label>
+                <input type="number" step="0.1" id="bmi" name="bmi" required>
+            </div>
+            <div class="form-group">
+                <label for="diabetesPedigreeFunction">Diabetes Pedigree Function</label>
+                <input type="number" step="0.01" id="diabetesPedigreeFunction" name="diabetesPedigreeFunction" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <h3>{{pred}}</h3>
+    </div>
+</body>
+</html>
